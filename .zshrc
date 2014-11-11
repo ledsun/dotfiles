@@ -85,3 +85,6 @@ alias goapp=~/google-cloud-sdk/platform/google_appengine/goapp
 # aws cli
 export PATH=$PATH:/usr/local/aws/bin
 source /usr/local/aws/bin/aws_zsh_completer.sh
+
+# zsh-completions
+fpath=(/usr/local/share/zsh-completions $fpath)
