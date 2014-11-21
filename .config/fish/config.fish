@@ -4,17 +4,15 @@ end
 
 function fish_right_prompt
     git_prompt
+    set_color magenta
+    printf ' '
+    printf '%s' (echo $PWD | sed -e "s|^$HOME|~|" -e 's|^/private||')
 end
 
 function git_prompt
     if git rev-parse --show-toplevel >/dev/null 2>&1
-        #setopt prompt_subst
-        set_color magenta
-        printf '['
         set_color green
         printf '%s' (git_current_branch)
-        set_color magenta
-        printf ']'
         set_color normal
     end
 end
