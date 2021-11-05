@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_FILES=( .zshrc .config/fish/config.fish)
+DOT_FILES=( .zshrc .config/fish)
 
 for file in ${DOT_FILES[@]}
 do
