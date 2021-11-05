@@ -88,3 +88,8 @@ source /usr/local/aws/bin/aws_zsh_completer.sh
 
 # zsh-completions
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# added by travis gem
+[ -f /Users/shigerunakajima/.travis/travis.sh ] && source /Users/shigerunakajima/.travis/travis.sh
