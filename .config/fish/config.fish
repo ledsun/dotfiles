@@ -36,7 +36,7 @@ end
 if [ -f '/Users/shigerunakajima/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/shigerunakajima/Downloads/google-cloud-sdk/path.fish.inc'; end
 
 # for RubyMine
-set PATH /Users/shigerunakajima/.rbenv/bin/ $PATH
+set PATH $HOME/.rbenv/bin/ $PATH
 set PATH /usr/local/bin/ $PATH
 
 status --is-interactive; and source (rbenv init -|psub)
